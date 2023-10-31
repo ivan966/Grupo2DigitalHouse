@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --cPrimario : #4021da;
+    --cSecundario: #653fe4;
+    --calgo2: #895ced;
+    --calgo3: #ae79f6;
+    --calgo4: #d397ff;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 400px;
+    padding: 50px;
+    background:  var(--cSecundario);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
+    margin: 0;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: white;;
+}
+
+.form-group {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* border: 1px solid var(--calgo4); */
+    border-radius: 15px;
+    background-color: var(--calgo2);
+    color: white;
+    border: 0;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+
+input[type="submit"] {
+    background: var(--calgo3);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="submit"]:hover {
+    background: var(--calgo4);
+}
