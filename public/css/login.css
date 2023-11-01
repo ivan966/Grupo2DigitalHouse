@@ -20,7 +20,7 @@ body {
 
 .container {
     max-width: 400px;
-    padding: 50px;
+    padding: 15px;
     background:  var(--cSecundario);
     border-radius: 40px;
     display: flex;
@@ -31,6 +31,15 @@ body {
     margin: 0;
     flex-direction: column;
 }
+.container-register{
+    height: 77vh;
+}
+@media (min-width: 460px){
+    .container{
+        width: 70%;
+    }   
+}
+
 
 h2 {
     text-align: center;
@@ -49,7 +58,7 @@ label {
     display: block;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
